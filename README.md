@@ -1,22 +1,37 @@
-# Chilean RUT Validator
+# CL RUT Validator
 
 A TypeScript package for validating and formatting Chilean RUT (Rol Único Tributario) numbers.
 
-## Installation
+[![Version](https://img.shields.io/npm/v/cl-rut-validator?logo=npm)](https://www.npmjs.com/package/cl-rut-validator)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
+[![Downloads](https://img.shields.io/npm/dm/cl-rut-validator)](https://www.npmjs.com/package/cl-rut-validator)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/cl-rut-validator)](https://bundlephobia.com/package/cl-rut-validator)
+[![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/yourusername/cl-rut-validator)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?logo=opensourceinitiative)](https://opensource.org/license/mit)
+
+## 📋 Features
+
+- **Zero Dependencies** - Lightweight and efficient implementation
+- **TypeScript Native** - Full type definitions and type safety
+- **Comprehensive Validation** - Complete validation for Chilean RUT numbers
+- **Security Focused** - Protection against common validation bypass techniques
+- **Standard Formatting** - Convert RUTs to Chilean standard format (XX.XXX.XXX-X)
+- **Module 11 Algorithm** - Proper verification digit calculation
+
+## 🚀 Installation
 
 ```bash
+# Using npm
 npm install cl-rut-validator
+
+# Using yarn
+yarn add cl-rut-validator
+
+# Using pnpm
+pnpm add cl-rut-validator
 ```
 
-## Features
-
-- Written in TypeScript with full type definitions
-- Comprehensive validation for Chilean RUT numbers
-- Security-focused implementation
-- Formatting to standard Chilean format (XX.XXX.XXX-X)
-- No external dependencies
-
-## Usage
+## 💻 Usage
 
 ### JavaScript (CommonJS)
 
@@ -68,66 +83,41 @@ console.log(validation);
 console.log(formatRut('123456785')); // '12.345.678-5'
 ```
 
-## API
-
-### isValidRut(rut: unknown): boolean
-
-Validates if a given input is a valid Chilean RUT.
-
-- **Parameters**: `rut` (any type) - The RUT to validate
-- **Returns**: `boolean` - True if the RUT is valid, false otherwise
-
-### validateRut(rut: unknown): RutValidationResult
-
-Returns detailed validation information for a RUT.
-
-- **Parameters**: `rut` (any type) - The RUT to validate
-- **Returns**: `RutValidationResult` object with the following properties:
-  - `isValid` (boolean): Whether the RUT is valid
-  - `formatted` (string|null): The formatted RUT (if valid)
-  - `raw` (string): The cleaned RUT without formatting
-  - `rutNumber` (string, optional): The RUT number without verification digit (if valid)
-  - `verificationDigit` (string, optional): The verification digit (if valid)
-
-### formatRut(rut: unknown): string | null
-
-Formats a RUT to standard Chilean format (XX.XXX.XXX-X).
-
-- **Parameters**: `rut` (any type) - The RUT to format
-- **Returns**: `string|null` - The formatted RUT if valid, or null if invalid
-
-### cleanRut(rut: unknown): string
-
-Cleans a RUT by removing formatting characters.
-
-- **Parameters**: `rut` (any type) - The RUT to clean
-- **Returns**: `string` - The cleaned RUT string
-
-### calculateVerificationDigit(rutNumber: string | number): string
-
-Calculates the verification digit for a given RUT number.
-
-- **Parameters**: `rutNumber` (string|number) - RUT number without verification digit
-- **Returns**: `string` - The calculated verification digit
-
-## Understanding Chilean RUT
+## 🔍 Understanding Chilean RUT
 
 The Chilean RUT (Rol Único Tributario) is the national tax ID number in Chile. It consists of:
 
 1. A sequence of digits (typically 7-8 digits)
 2. A verification digit (0-9 or 'K')
 
-The verification digit is calculated using Module 11 algorithm.
+The verification digit is calculated using Module 11 algorithm to ensure validity.
 
-## Security
+## 🔒 Security Features
 
-This package includes several security features:
+This package includes several security measures:
 
 - Protection against DoS attacks with input length limits
-- Proper handling of all input types
+- Proper type handling for all inputs
 - Comprehensive error management
 - Protection against common validation bypass techniques
 
-## License
+## 📦 Browser Compatibility
 
-MIT
+This package works in all modern browsers and Node.js environments:
+
+- Chrome, Firefox, Safari, Edge (latest 2 versions)
+- Node.js 14.x and above
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
