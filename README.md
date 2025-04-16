@@ -14,9 +14,6 @@ A TypeScript package for validating and formatting Chilean RUT (Rol Único Tribu
 - **Zero Dependencies** - Lightweight and efficient implementation
 - **TypeScript Native** - Full type definitions and type safety
 - **Comprehensive Validation** - Complete validation for Chilean RUT numbers
-- **Security Focused** - Protection against common validation bypass techniques
-- **Standard Formatting** - Convert RUTs to Chilean standard format (XX.XXX.XXX-X)
-- **Module 11 Algorithm** - Proper verification digit calculation
 
 ## 🚀 Installation
 
@@ -98,15 +95,6 @@ This package includes several security measures:
 
 - Protection against DoS attacks with input length limits
 - Proper type handling for all inputs
-- Comprehensive error management
-- Protection against common validation bypass techniques
-
-## 📦 Browser Compatibility
-
-This package works in all modern browsers and Node.js environments:
-
-- Chrome, Firefox, Safari, Edge (latest 2 versions)
-- Node.js 14.x and above
 
 ## 🤝 Contributing
 
