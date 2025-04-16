@@ -2,11 +2,11 @@
 
 A TypeScript package for validating and formatting Chilean RUT (Rol Único Tributario) numbers.
 
-[![Version](https://img.shields.io/npm/v/cl-rut-validator?logo=npm)](https://www.npmjs.com/package/cl-rut-validator)
+[![Version](https://img.shields.io/npm/v/cl-rut-validator?logo=npm)](https://www.npmjs.com/bennu/cl-rut-validator)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript)](https://www.typescriptlang.org/)
-[![Downloads](https://img.shields.io/npm/dm/cl-rut-validator)](https://www.npmjs.com/package/cl-rut-validator)
-[![Bundle Size](https://img.shields.io/bundlephobia/minzip/cl-rut-validator)](https://bundlephobia.com/package/cl-rut-validator)
-[![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/yourusername/cl-rut-validator)
+[![Downloads](https://img.shields.io/npm/dm/bennucl-rut-validator)](https://www.npmjs.com/bennu/cl-rut-validator)
+[![Bundle Size](https://img.shields.io/bundlephobia/minzip/cl-rut-validator)](https://bundlephobia.com/bennu/cl-rut-validator)
+[![Test Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/bennu/cl-rut-validator)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?logo=opensourceinitiative)](https://opensource.org/license/mit)
 
 ## 📋 Features
