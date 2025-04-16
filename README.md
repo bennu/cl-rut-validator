@@ -19,13 +19,13 @@ A TypeScript package for validating and formatting Chilean RUT (Rol Único Tribu
 
 ```bash
 # Using npm
-npm install cl-rut-validator
+npm install @bennu/cl-rut-validator
 
 # Using yarn
-yarn add cl-rut-validator
+yarn add @bennu/cl-rut-validator
 
 # Using pnpm
-pnpm add cl-rut-validator
+pnpm add @bennu/cl-rut-validator
 ```
 
 ## 💻 Usage
@@ -33,7 +33,7 @@ pnpm add cl-rut-validator
 ### JavaScript (CommonJS)
 
 ```javascript
-const { isValidRut, validateRut, formatRut } = require('cl-rut-validator');
+const { isValidRut, validateRut, formatRut } = require('@bennu/cl-rut-validator');
 
 // Basic validation
 console.log(isValidRut('12.345.678-5')); // true
@@ -58,7 +58,7 @@ console.log(formatRut('123456785')); // '12.345.678-5'
 ### TypeScript / ES Modules
 
 ```typescript
-import { isValidRut, validateRut, formatRut, RutValidationResult } from 'cl-rut-validator';
+import { isValidRut, validateRut, formatRut, RutValidationResult } from '@bennu/cl-rut-validator';
 
 // Basic validation
 console.log(isValidRut('12.345.678-5')); // true
