@@ -1,13 +1,14 @@
 {
-  "name": "cl-rut-validator",
-  "version": "0.0.1",
+  "name": "@bennu-cl/cl-rut-validator",
+  "version": "1.0.0",
   "description": "A TypeScript validator for Chilean RUT (Rol Único Tributario) numbers",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "tsc": "tsc"
   },
   "keywords": [
     "chile",
@@ -37,5 +38,5 @@
   "bugs": {
     "url": "https://github.com/bennu/cl-rut-validator/issues"
   },
-  "homepage": "https://github.com/bennu/cl-rut-validatort#readme"
+  "homepage": "https://github.com/bennu/cl-rut-validator#readme"
 }
